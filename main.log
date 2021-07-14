@@ -1,0 +1,17 @@
+[ N 2021-07-14 10:56:49.2719 24907/T1 age/Wat/WatchdogMain.cpp:1373 ]: Starting Passenger watchdog...
+[ N 2021-07-14 10:56:49.2903 24910/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2021-07-14 10:56:49.2904 24910/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2021-07-14 10:56:49.2983 24910/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 24910
+[ N 2021-07-14 10:56:52.5438 24910/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+
+[ N 2021-07-14 10:57:16.9136 24910/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2021-07-14 10:57:16.9136 24910/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2021-07-14 10:57:16.9136 24910/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 24993, application /home/deploy/apps/rails/homesite (production)
+[ N 2021-07-14 10:57:16.9137 24910/Ta Ser/Server.h:902 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2021-07-14 10:57:16.9137 24910/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2021-07-14 10:57:16.9137 24910/T8 Ser/Server.h:902 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2021-07-14 10:57:16.9137 24910/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2021-07-14 10:57:16.9140 24910/Td Ser/Server.h:902 ]: [ApiServer] Freed 0 spare client objects
+[ N 2021-07-14 10:57:16.9140 24910/Td Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2021-07-14 10:57:16.9145 24910/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 24993, application /home/deploy/apps/rails/homesite (production)
+[ N 2021-07-14 10:57:18.3355 24910/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
