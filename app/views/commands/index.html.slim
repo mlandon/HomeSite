@@ -1,0 +1,25 @@
+
+.container
+  table.table.table-bordered.mt-3.table-sm
+    thead
+      tr
+        th Title
+        th Command
+        th Category
+        th
+        th
+        th
+
+    tbody
+      - @commands.each do |command|
+        tr
+          td = command.title
+          td = command.command
+          td = command.category
+          td = link_to 'Show', command
+          td = link_to 'Edit', edit_command_path(command)
+          td = link_to 'Destroy', command, data: { confirm: 'Are you sure?' }, method: :delete
+
+  br
+
+  = link_to 'New Command', new_command_path, class: 'btn btn-primary mb-3'

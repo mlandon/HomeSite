@@ -1,0 +1,24 @@
+
+.container
+  - if notice
+    .alert.alert-info#notice = notice
+
+  table.table.table-bordered.mt-3.table-sm
+    tbody
+      tr
+        td Title 
+        td= @command.title
+      tr
+        td Command 
+        td= @command.command
+      tr
+        td Note 
+        td= @command.note
+      tr
+        td Category 
+        td= @command.category
+  br
+
+
+  => link_to 'Edit', edit_command_path(@command), class: 'btn btn-primary me-3 mb-3'
+  =< link_to 'Back', commands_path, class: 'btn btn-primary mb-3'
