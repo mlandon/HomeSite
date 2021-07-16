@@ -18,8 +18,8 @@
           td = command.category
           td = link_to 'Show', command
           td = link_to 'Edit', edit_command_path(command)
-          td = link_to 'Destroy', command, data: { confirm: 'Are you sure?' }, method: :delete
+          td = link_to 'Delete', command, method: :delete, data: { confirm: 'Are you sure?' }
 
   br
 
-  = link_to 'New Command', new_command_path, class: 'btn btn-primary mb-3'
+  = link_to 'New command', new_command_path, class: 'btn btn-primary mb-3'

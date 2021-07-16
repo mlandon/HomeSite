@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.0.2'
+ruby '2.6.6'
 
 gem 'rails', '~> 6.1.4'
 gem 'sqlite3', '~> 1.4'
@@ -13,7 +13,6 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 gem 'slim-rails', '~> 3.2'
-gem 'passenger', '>= 5.3.2', require: "phusion_passenger/rack_handler"
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
@@ -26,11 +25,16 @@ gem 'bcrypt', '~> 3.1.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
+group :production do
+  gem 'passenger', '>= 5.3.2', require: "phusion_passenger/rack_handler"
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Use Puma as the app server
-  # gem 'puma', '~> 5.0'
+  gem 'puma'
+  gem 'shotgun'
 end
 
 group :development do
